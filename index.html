@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AuthorLaunch helps independent authors turn their books into clear, actionable marketing campaigns.">
+  <title>AuthorLaunch | Stop wondering how to market your book</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#">Author<span>Launch</span></a>
+    <a class="nav-link" href="#book-form">Try it free</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">BOOK MARKETING, MADE ACTIONABLE</p>
+        <h1>Stop wondering how to market your book.</h1>
+        <p class="hero-text">AuthorLaunch turns your book details and goals into a focused marketing campaign, so you know exactly what to work on next.</p>
+        <a class="primary-button" href="#book-form">Start Marketing My Book</a>
+        <p class="microcopy">Free to try. No credit card required.</p>
+      </div>
+
+      <div class="preview-card" aria-label="Example AuthorLaunch daily plan">
+        <div class="preview-top">
+          <div>
+            <span class="preview-label">TODAY'S PLAN</span>
+            <h2>3 actions to move your book forward</h2>
+          </div>
+          <span class="day-pill">Day 1</span>
+        </div>
+        <div class="task"><span>1</span><div><strong>Reach readers</strong><p>Share a question that connects your book's theme to your ideal reader.</p></div></div>
+        <div class="task"><span>2</span><div><strong>Create content</strong><p>Turn your strongest story hook into a 20-second Reel or TikTok.</p></div></div>
+        <div class="task"><span>3</span><div><strong>Build momentum</strong><p>Contact three relevant readers, reviewers, or communities.</p></div></div>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <p class="eyebrow">HOW IT WORKS</p>
+      <h2>From book details to a plan you can actually follow.</h2>
+      <div class="steps">
+        <article><span>01</span><h3>Tell us about your book</h3><p>Add your genre, description, publishing status, retailers, and marketing goal.</p></article>
+        <article><span>02</span><h3>Build your campaign</h3><p>AuthorLaunch organizes practical promotion ideas around your specific book.</p></article>
+        <article><span>03</span><h3>Know what to do today</h3><p>Work through a short list of clear tasks instead of staring at an overwhelming marketing checklist.</p></article>
+      </div>
+    </section>
+
+    <section class="book-section" id="book-form">
+      <div class="form-intro">
+        <p class="eyebrow">BUILD YOUR FIRST PLAN</p>
+        <h2>Tell us about your book.</h2>
+        <p>This early version creates a starter campaign right in your browser. No account is required yet.</p>
+      </div>
+
+      <form class="book-form" id="marketing-form">
+        <label>Book title<input id="title" type="text" placeholder="e.g. Dead & Awake" required></label>
+        <label>Author name<input id="author" type="text" placeholder="Your publishing name" required></label>
+        <label>Genre<input id="genre" type="text" placeholder="e.g. Fantasy, Romance, Thriller" required></label>
+        <label>Publication status<select id="status" required><option value="">Choose one</option><option>Already published</option><option>Launching soon</option><option>Still writing</option></select></label>
+        <label class="full-width">Book description<textarea id="description" rows="5" placeholder="What is the book about? What makes a reader want to keep turning pages?" required></textarea></label>
+        <label>Where is it sold?<select id="retailer"><option>Amazon</option><option>Amazon + other retailers</option><option>Direct from me</option><option>Not published yet</option></select></label>
+        <label>Primary goal<select id="goal"><option>Find new readers</option><option>Increase sales</option><option>Prepare for launch</option><option>Get more reviews</option><option>Build my author audience</option></select></label>
+        <button class="primary-button full-width" type="submit">Build My Marketing Plan</button>
+      </form>
+    </section>
+
+    <section class="results hidden" id="results" aria-live="polite">
+      <p class="eyebrow">YOUR STARTER CAMPAIGN</p>
+      <h2 id="plan-heading">Your marketing plan</h2>
+      <p id="plan-summary"></p>
+      <div class="plan-grid" id="plan-grid"></div>
+      <button class="secondary-button" id="reset-plan" type="button">Build another plan</button>
+    </section>
+  </main>
+
+  <footer><strong>AuthorLaunch</strong><p>Built for independent authors who want a clearer way to market their books.</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
